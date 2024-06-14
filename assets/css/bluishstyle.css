@@ -2856,7 +2856,23 @@ background-color: #202020;
 }
 
 
+.viewFeaturesButton{
+  color: white;
+  text-decoration: underline;
+  margin-top: 30px;
+  
+}
 
+.viewFeaturesButton:hover{
+  color: rgb(186, 186, 186);
+  text-decoration: underline;
+  margin-top: 30px;
+  
+}
+
+#portfolio2 div .viewFeaturesButton {
+  margin-top: 57px;
+}
 
 
 
