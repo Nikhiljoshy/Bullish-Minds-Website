@@ -12,6 +12,24 @@
 
         gtag('config', 'G-W7BGB6FFQ2');
     </script>
+    <script>
+        // Use ipinfo.io's free API to get user's country information
+        fetch('https://ipinfo.io/json')
+          .then(response => response.json())
+          .then(data => {
+            const userCountry = data.country; // Country code (e.g., 'US', 'IN')
+    
+            // Define the local country
+            const localCountry = 'IN'; // 'IN' for India; change to your desired country code
+    
+            // Redirect based on user's country
+            if (userCountry === localCountry) {
+              window.location.href = './IN/indexs.html'; // Local version of the website
+            }
+          })
+          .catch(error => console.error('Error detecting location:', error));
+    </script>
+    
 
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
