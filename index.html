@@ -13,6 +13,26 @@
   gtag('config', 'G-W7BGB6FFQ2');
 </script>
 
+  <script>
+    // Use ipinfo.io's free API to get user's country information
+    fetch('https://ipinfo.io/json')
+      .then(response => response.json())
+      .then(data => {
+        const userCountry = data.country; // Country code (e.g., 'US', 'IN')
+
+        // Define the local country
+        const localCountry = 'IN'; // 'IN' for India; change to your desired country code
+
+        // Redirect based on user's country
+        if (userCountry === localCountry) {
+          window.location.href = './IN/index.html'; // Local version of the website
+        } else {
+          window.location.href = './INT/index.html'; // International version
+        }
+      })
+      .catch(error => console.error('Error detecting location:', error));
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -21,22 +41,22 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/white_curved.png" rel="icon">
-  <link href="assets/img/white_curved.png" rel="apple-touch-icon">
+  <link href="assets//img/white_curved.png" rel="icon">
+  <link href="assets//img/white_curved.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets//vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets//vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets//vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets//vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets//vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets//vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets//css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Techie
@@ -53,7 +73,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
       
-      <h1 class="logo"><a href="index.html"><img src="./assets/img/websitelogo.png" alt=""> Bullish Minds</a></h1>
+      <h1 class="logo"><a href="index.html"><img src="./assets//img/websitelogo.png" alt=""> Bullish Minds</a></h1>
     
       <nav id="navbar" class="navbar">
         <ul>
@@ -79,7 +99,7 @@
           <div><a href="#services" class="btn-get-started scrollto">Get Started</a></div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="assets//img/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -98,7 +118,7 @@
       <div class="section-title pt-3 pt-lg-0" data-aos="zoom-in">
         <h2 class="mb-0 pb-0">Our services.</h2>
         <div>
-            <img src="./assets/img/after.png" class="afterimage" alt="">
+            <img src="./assets//img/after.png" class="afterimage" alt="">
         </div>
     </div>
       
@@ -106,7 +126,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/graduation.png" class="img-fluid" alt="">
+            <img src="assets//img/graduation.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <br><br><br>
@@ -130,7 +150,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-1" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/line-graph-2.png" class="img-fluid" alt="">
+            <img src="assets//img/line-graph-2.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right">
             <br><br><br><br>
@@ -152,7 +172,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/line-graph.png" class="img-fluid" alt="">
+            <img src="assets//img/line-graph.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <br><br><br><br>
@@ -180,7 +200,7 @@
     <div class="section-title pt-3 pt-lg-0" data-aos="zoom-in">
       <h2 class="mb-0 pb-0">Our Free services</h2>
       <div>
-          <img src="./assets/img/after.png" class="afterimage" alt="">
+          <img src="./assets//img/after.png" class="afterimage" alt="">
       </div>
   </div>
     <section class="services">
@@ -192,7 +212,7 @@
           
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon"><img src="assets/img/youtube.png" class="img-fluid" alt=""></div>
+                <div class="icon"><img src="assets//img/youtube.png" class="img-fluid" alt=""></div>
                 <h4 class="title"><a href="https://www.youtube.com/channel/UCTajmqIC4dQrArfhEstaRPg">YouTube channel</a></h4>
                 <p class="description">Visit my YouTube channel to access high quality videos and information.</p>
               </div>
@@ -201,7 +221,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><img src="assets/img/spotify.png" class="img-fluid" alt=""></div>
+              <div class="icon"><img src="assets//img/spotify.png" class="img-fluid" alt=""></div>
               <h4 class="title"><a href="https://open.spotify.com/show/1XXskaY4vUSY1HPl7Wp7P1">Spotify podcast</a></h4>
               <p class="description">Ultimate trading audio course with visuals for beginners.</p>
             </div>
@@ -209,14 +229,14 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-              <div class="icon"><img src="assets/img/telegram.png" class="img-fluid" alt=""></div>
+              <div class="icon"><img src="assets//img/telegram.png" class="img-fluid" alt=""></div>
               <h4 class="title"><a href="https://t.me/bullish_minds">Telegram channel</a></h4>
               <p class="description">Join my free Telegram channel to access more free tools and stay up to date.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="800">
-              <div class="icon"><img src="assets/img/instagram.png" class="img-fluid" alt=""></div>
+              <div class="icon"><img src="assets//img/instagram.png" class="img-fluid" alt=""></div>
               <h4 class="title"><a href="https://www.instagram.com/bullish_minds_/?igshid=MGNiNDI5ZTU%3D">Instagram page</a></h4>
               <p class="description">Follow us on Instagram to track my trade updates.</p>
             </div>
@@ -233,7 +253,7 @@
     <div class="section-title pt-3 pt-lg-0" data-aos="zoom-in">
       <h2 class="mb-0 pb-0">Check our pricing</h2>
       <div>
-          <img src="./assets/img/after.png" class="afterimage" alt="">
+          <img src="./assets//img/after.png" class="afterimage" alt="">
       </div>
   </div>
     <section id="portfolio" class="pricingg">
@@ -247,7 +267,7 @@
             <div class="card">
               <h3 style="color: #8FE3CF;">Ultimate indicator + Trading course</Video></h3>
               <div class="price"><sup>£</sup>159<span>.00</span></div>
-              <img src="assets/img/graduation.png" class="pricingg-img" alt="">
+              <img src="assets//img/graduation.png" class="pricingg-img" alt="">
               <br><br>
               <ul  style="list-style-type:disc;">
                 <li>Strategy which gives you average 1:8 RRR.</li><br>
@@ -260,7 +280,7 @@
               </ul>
               
               <a href = "https://www.youtube.com/watch?v=WeP7NJUSbtU" class ="viewFeaturesButton">View all Details</a>
-              <a href="PayOptCombined.html" class="btn-buy">Buy Now</a>
+              <a href="./INT/pay.html?product=combine" class="btn-buy">Buy Now</a>
             </div>
           </div>
 
@@ -268,7 +288,7 @@
             <div class="card">
               <h3 style="color: #8FE3CF;">Highs & lows Ultimate</h3>
               <div class="price"><sup>£</sup>79<span>.00</span></div>
-              <img src="assets/img/line-graph-2.png" class="pricingg-img" alt="">
+              <img src="assets//img/line-graph-2.png" class="pricingg-img" alt="">
               <br>
               <ul style="list-style-type:disc;"><br>
                 <li>TradingView indicator for drawing Highs and Lows automatically.</li><br>
@@ -281,7 +301,7 @@
                 <li>BOS, CHOCH and Order Block alerts</li> 
               </ul>
               <a href = "./indexs.html" class ="viewFeaturesButton">View all features</a>
-              <a href="PayOptUltimate.html" class="btn-buy">Buy Now</a>
+              <a href="./INT/pay.html?product=ultimate" class="btn-buy">Buy Now</a>
               
             </div>
           </div>
@@ -290,7 +310,7 @@
             <div class="card">
               <h3 style="color: #8FE3CF;">Highs & lows Basic</h3>
               <div class="price"><sup>£</sup>49<span>.00</span></div>
-              <img src="assets/img/line-graph.png" class="pricingg-img" alt="">
+              <img src="assets//img/line-graph.png" class="pricingg-img" alt="">
               <br><br>
               <ul  style="list-style-type:disc;">                 
                 <li>TradingView indicator for drawing Highs and Lows automatically.</li><br>
@@ -306,7 +326,7 @@
                 <li class="na">Massa ultricies mi</li> -->
               </ul>
               <a href = "./indexs.html" class ="viewFeaturesButton">View all features</a>
-              <a href="PayOptBasic.html" class="btn-buy">Buy Now</a>
+              <a href="./INT/pay.html?product=basic" class="btn-buy">Buy Now</a>
             </div>
           </div>
 
@@ -328,7 +348,7 @@
   <div class="section-title pt-5" data-aos="zoom-in" id="contactus">
     <h2 class="mb-0 pb-0">Contact us</h2>
     <div>
-        <img src="./assets/img/after.png" class="afterimage" alt="">
+        <img src="./assets//img/after.png" class="afterimage" alt="">
     </div>
 </div>
   <!-- ======= Footer ======= -->
@@ -523,16 +543,16 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets//vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets//vendor/aos/aos.js"></script>
+  <script src="assets//vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets//vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets//vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets//vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets//vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JgS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets//js/main.js"></script>
 
 </body>
 
